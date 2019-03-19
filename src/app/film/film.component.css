@@ -1,9 +1,11 @@
 .Filmpage{
   width: 80%;
-  background: #a19c9c;
+  background: #717171;
   display: inline-block;
   margin-left: 10%;
+  color: #b5b5b5;
 }
+
 .FilmPart{
   display: block;
   margin-bottom: 2%;
@@ -11,12 +13,12 @@
 .imgFilm{
   width: 25%;
   height: 350px;
-  background: blue;
+
   display: inline-block;
   margin-right: 5px;
   float: left;
   margin-left: 2%;
-  border: 1px solid blue ;
+
 }
 .descFilm{
 
@@ -39,6 +41,7 @@
 }
 .nameFilm{
   margin-left: 40%;
+  color: white;
 }
 
 .shortinf{
@@ -50,7 +53,7 @@
   width: 22%;
   height: 100px;
   display: inline-block;
-  border: 1px solid blue;
+
   margin-left: 2%;
 }
 
@@ -66,12 +69,19 @@
   width: 25%;
   height: 100px;
   display: inline-block;
-  border: 1px solid blue;
-  background: yellow;
+
 }
 .play{
   width: 95%;
   height: 250px;
-  border: 1px solid blue;
+border: 1px double white;
   margin: 0 auto;
+}
+.sound{
+width: 100%;
+}
+.btnSound{
+ margin: 0 auto;
+  margin-left: 42%;
+
 }

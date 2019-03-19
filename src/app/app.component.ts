@@ -7,7 +7,7 @@ import {element} from 'protractor';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'slider';
   el = document.getElementsByClassName('slid')
 

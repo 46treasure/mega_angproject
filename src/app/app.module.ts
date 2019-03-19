@@ -7,11 +7,12 @@ import { HomeComponent } from './home/home.component';
 import {RouterModule, Routes} from '@angular/router';
 import { UserpageComponent } from './userpage/userpage.component';
 import {FilmComponent} from './film/film.component';
+import { SoundtrackComponent } from './film/soundtrack/soundtrack.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'userpage', component: UserpageComponent},
-  {path: 'film', component: FilmComponent}
+  {path: 'film', component: FilmComponent, children: [{path: 'sound', component: SoundtrackComponent}]}
   ];
 
 @NgModule({
@@ -19,7 +20,8 @@ const routes: Routes = [
     AppComponent,
     HomeComponent,
     UserpageComponent,
-    FilmComponent
+    FilmComponent,
+    SoundtrackComponent
   ],
   imports: [
     BrowserModule,
