@@ -1,8 +1,40 @@
-<div class="slider">
-  <div class="slid"><img [src]="image" alt="" width="100%" height="100%"></div>
-  <div class="next">
-  </div>
-</div>
+<!--<form (ngSubmit)="sendForm()">-->
+  <!--<input type="text" name="name"-->
+  <!--[(ngModel)]="film.name">-->
+  <!--<input type="text" name="aboutFilm"-->
+  <!--[(ngModel)]="film.aboutFilm">-->
+  <!--<input type="text" name="year"-->
+  <!--[(ngModel)]="film.year">-->
+  <!--<input type="text" name="country"-->
+  <!--[(ngModel)]="film.country">-->
+  <!--<input type="text" name="quality"-->
+  <!--[(ngModel)]="film.quality">-->
+  <!--<input type="file" name="picture"-->
+  <!--[(ngModel)]="film.picture">-->
+  <!--<button>Send</button>-->
+<!--</form>-->
+
+<form #form="ngForm" (ngSubmit)="sendForm(form)">
+  <label>
+    <input type="text" ngModel name="name">
+  </label>
+  <label>
+    <input type="text" ngModel name="aboutFilm">
+  </label>
+  <label>
+    <input type="text" ngModel name="year">
+  </label>
+  <label>
+    <input type="text" ngModel name="country">
+  </label>
+  <label>
+    <input type="text" ngModel name="quality">
+  </label>
+  <!--<input type="file" ngModel="" name="picture">-->
+  <input type="submit">
+</form>
+
+
 <section>
   <div class="container" style="box-shadow: 3px 0 7px rgba(0, 0, 0, .3);">
     <div class="row">
